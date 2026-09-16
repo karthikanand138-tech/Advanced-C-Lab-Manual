@@ -13,16 +13,47 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+#include <stdio.h>
+
+struct Data
+{
+    int a;
+    int b;
+};
+
+struct Data addStructs(struct Data d1, struct Data d2)
+{
+    struct Data result;
+
+    result.a = d1.a + d2.a;
+    result.b = d1.b + d2.b;
+
+    return result;
+}
+
+int main()
+{
+    struct Data d1, d2, result;
+
+    scanf("%d %d", &d1.a, &d1.b);
+    scanf("%d %d", &d2.a, &d2.b);
+
+    result = addStructs(d1, d2);
+
+    printf("%d %d", result.a, result.b);
+
+    return 0;
+}
+
+```
 
 
 
 
 Output:
 
-//paste your output screenshots here
-
-
+<img width="477" height="395" alt="image" src="https://github.com/user-attachments/assets/85fa510d-8d03-405f-977d-df923d756523" />
 
 
 
